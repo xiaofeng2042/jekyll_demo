@@ -3,18 +3,19 @@ permalink: /:categories/:year/:month/:day/:title
 markdown: kramdown
 
 exclude: [".rvmrc",".rbenv-version","README.md","Rakefile","changelog.md"]
-auto: true
-pygments: true
+# auto: true
+highlighter: pygments
+
 #分页配置，每页最多显示几篇文章
 paginate: 10
 
 #修改为自己得配置
 title : 晓峰的blog
 tagline: simple is beautyful
-author:
-	name: xiaofeng
-	email: 601244325@qq.com
-	github: xiaofeng2042
+# author:
+# 	name: xiaofeng
+# 	email: 601244325@qq.com
+# 	github: xiaofeng2042
 
 # 博客地址，如果没有自定义CNAME，写用户名即可
 production_url : xiaofeng2042
@@ -76,7 +77,7 @@ site :
   comments :
     provider : disqus 
     disqus :
-      short_name : 'adevil23'
+      short_name : 'xiaofeng'
 
 
   # Settings for analytics helper
@@ -85,18 +86,18 @@ site :
   # 修改google分析工具的id       
   # 如果想自定义分析服务提供商，请自行google
   # provider : google 
-  analytics :
-    provider : baidu 
-    google : 
-        tracking_id : ''
+  # analytics :
+  #   provider : baidu 
+  #   google : 
+  #       tracking_id : ''
 
   # Settings for sharing helper. 
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.
   # Set 'provider' to the sharing provider you want to use.
   # Set 'provider' to false to turn sharing off globally.
   #
-  sharing :
-    provider : false
+  # sharing :
+  #   provider : false
 
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:
@@ -110,14 +111,8 @@ site :
   # where [HELPER] is the name of the helper you are overriding.
 
 
+# baseurl: /jekyll_demo
 
 
 
 
-
-
-
-
-
-
-baseurl: /jekyll_demo
