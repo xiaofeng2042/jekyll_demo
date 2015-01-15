@@ -5,17 +5,122 @@
 　　<title>我的Blog</title>
 　　</head>
 　　<body>
-　　　　　　<h2>我的Blog</h2>
-　　<p>最新文章</p>
-　　<ul>
 　　　　
-　　　　　　<li>07 Jan 2015 <a href="/2015/01/07/%E6%89%BE%E4%B8%80%E6%89%BE">找一找</a></li>
-　　　　
-　　　　　　<li>06 Jan 2015 <a href="/2015/01/06/%E6%91%B8%E7%B4%A2%E7%AF%87">摸索篇</a></li>
-　　　　
-　　　　　　<li>05 Jan 2015 <a href="/2015/01/05/hello-world">你好，世界</a></li>
-　　　　
-　　</ul>
+
+<!-- 按照分页插入博客文章 -->
+
+	<h2 class="title"><a href="/2015/01/07/%E6%89%BE%E4%B8%80%E6%89%BE">找一找</a></h2>
+	<div class="post_info">
+  	
+  	<span>
+  	</div>
+
+  <div class="archive">
+    
+  </div>
+
+	<h2 class="title"><a href="/2015/01/06/%E6%91%B8%E7%B4%A2%E7%AF%87">摸索篇</a></h2>
+	<div class="post_info">
+  	
+  	<span>
+  	</div>
+
+  <div class="archive">
+    <h1>摸索篇</h1>
+
+<div>
+	<h2>摸索篇就是自己对jekyll的探索，就像刚刚装备好武器得试试威力如何。</h2>
+	<p>有这么一些问题：</p>
+	<p>1、自己添加的文本是否可以在本地就可以进行测试呀？</p>
+	每次都发布到github上才能看到结果，不方便不说未免会感觉到心虚
+	<p>2、从哪里找到练手的工具呢？</p>
+	找到一种方式临摹别人得作品，不是说好最快得方式就是共同进步吗？哪里会有像我一样得菜鸟呢？
+	成长路线应该是怎么样的呢？还是走着走着路自然就会形成呢？
+	<p>3、如何才能舒服的写好html？</p>
+	每次写标签的时候总是得写重复的东西，位置都不好调，模板、快捷键
+	<p>4、我想有漂亮得样式怎么办？</p>
+	自己得房子还是毛坯平房，别人的却是精装复式，看着羡慕呀！我得抖擞起精神给自己装一把。
+	<p>5、我的博客应该是不同方向的吧，如何做标签区分呢？</p>
+	这么一细想问题还真多呀！
+</div>
+
+<div>
+	<h2>先从第一个搞起：</h2>
+	发现可以本地建立Jekyll的，三步走：
+	<p>1.gem install Jekyll</p>
+	<p>2.gem install rdiscount</p>
+	<p>3.jekyll serve</p>
+    第一个问题就这么解决了，过程中还是遇到了无法安装Jekyll的问题
+
+    <h3>【错误】安装Jekyll 时候出错。</h3>
+ 	<p>ERROR:  Could not find a valid gem 'jekyll' (>= 0) in any repository  </p>
+	<p>ERROR:  Possible alternatives: jekyll`   </p>
+
+	<h3>【解决】 Github jekyll 中有解决方案</h3>
+	<p>$ gem sources --remove http://rubygems.org/</p>
+	<p>$ gem sources -a http://ruby.taobao.org/</p>
+	<p>$ gem sources -l</p>
+	<p>*** CURRENT SOURCES ***</p>
+	<p>http://ruby.taobao.org</p>    
+	<p>$ gem install jekyll </p>
+
+</div>
+
+
+  </div>
+
+	<h2 class="title"><a href="/2015/01/05/hello-world">你好，世界</a></h2>
+	<div class="post_info">
+  	
+  	<span>
+  	</div>
+
+  <div class="archive">
+    <h2>你好，世界</h2>
+<p>我的第一篇文章</p>
+<p>安装过程中有以下几点需要回顾一下：</p>
+<p>1、开始按照教程进行还是有很多遗留</p>
+<p>2、好在一旦我的博客生成有问题立刻会有邮件提醒，这个功能不错</p>
+<p>3、以后写作要列入日程了，学习如何写一个博客了</p>
+
+
+
+  </div>
+
+
+<!-- 分页页码展示 -->
+<div id="post-pagination" class="pagination pagination-centered">
+	<ul>
+		<!-- 上一页按钮 -->
+		
+		<li class="disabled">
+		<span><i class="icon-chevron-left"></i></span>
+		</li>
+		
+
+		<!-- 第一页,访问根目录 -->
+		
+		<li class="active">
+		<a href="#">1</a>
+		</li>
+		
+
+		
+
+		
+		<li class="disabled">
+		<a href="#"><i class="icon-chevron-right"></i></a>
+		</li>
+		
+	</ul>
+</div>
+
+
+
+
+
+
+
 　　</body>
 
 　　</html>
