@@ -111,7 +111,7 @@ site :
   # where [HELPER] is the name of the helper you are overriding.
 
 
-# baseurl: /jekyll_demo
+baseurl: /jekyll_demo
 
 
 
