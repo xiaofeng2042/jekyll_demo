@@ -63,11 +63,11 @@ site :
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
   #
-  archive_path: /posts.html
-  categories_path : /categories.html
-  tags_path : /posts.html
-  atom_path : /atom.xml
-  rss_path : /rss.xml
+  archive_path: /jekyll_demo/posts.html
+  categories_path : /jekyll_demo/categories.html
+  tags_path : /jekyll_demo/posts.html
+  atom_path : /jekyll_demo/atom.xml
+  rss_path : /jekyll_demo/rss.xml
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
@@ -111,7 +111,7 @@ site :
   # where [HELPER] is the name of the helper you are overriding.
 
 
-baseurl: /jekyll_demo
+# baseurl: /jekyll_demo
 
 
 
