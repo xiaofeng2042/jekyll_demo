@@ -5,7 +5,7 @@ title: 我的Blog
 {% include site/setup %}
 <!-- 按照分页插入博客文章 -->
 {% for post in paginator.posts %}
-	<h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	<h2 class="title"><a href="/jekyll_demo/{{ post.url }}">{{ post.title }}</a></h2>
 	<div class="post_info">
   	{% unless post.categories == empty %}
   	<ul class="tag_box inline">
@@ -33,7 +33,7 @@ title: 我的Blog
 			{% if paginator.previous_page == 1 %}
 			<a href="/"><i class="icon-chevron-left"></i></a>
 			{% else %}
-			<a href="/page{{ paginator.previous_page }}"><i class="icon-chevron-left"></i></a>
+			<a href="/jekyll_demo/page{{ paginator.previous_page }}"><i class="icon-chevron-left"></i></a>
 			{% endif %}
 		</li>
 		{% else %}
@@ -60,14 +60,14 @@ title: 我的Blog
 		</li>
 		{% else %}
 		<li>
-		<a href="/page{{ count }}">{{ count }}</a>
+		<a href="/jekyll_demo/page{{ count }}">{{ count }}</a>
 		</li>
 		{% endif %}
 		{% endfor %}
 
 		{% if paginator.next_page %}
 		<li>
-		<a href="/page{{ paginator.next_page }}"><i class="icon-chevron-right"></i></a>
+		<a href="/jekyll_demo/page{{ paginator.next_page }}"><i class="icon-chevron-right"></i></a>
 		</li>
 		{% else %}
 		<li class="disabled">
