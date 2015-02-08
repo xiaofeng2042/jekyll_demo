@@ -3,8 +3,8 @@ permalink: /:categories/:year/:month/:day/:title
 markdown: kramdown
 
 exclude: [".rvmrc",".rbenv-version","README.md","Rakefile","changelog.md"]
-# auto: true
-highlighter: pygments
+auto: true
+pygments: true
 
 #分页配置，每页最多显示几篇文章
 paginate: 10
@@ -12,10 +12,11 @@ paginate: 10
 #修改为自己得配置
 title : 晓峰的blog
 tagline: simple is beautyful
-# author:
-# 	name: xiaofeng
-# 	email: 601244325@qq.com
-# 	github: xiaofeng2042
+author :
+  name : xiaofeng2042
+  github : xiaofeng2042
+  twitter : 
+
 
 # 博客地址，如果没有自定义CNAME，写用户名即可
 production_url : xiaofeng2042
