@@ -10,7 +10,7 @@
       {% assign HOME_PATH = site.site.BASE_PATH %}
     {% else %}
       {% assign BASE_PATH = "/jekyll_demo/" %}
-      {% assign HOME_PATH = "/" %}
+      {% assign HOME_PATH = "/jekyll_demo/" %}
     {% endif %}
 
     {% if site.site.ASSET_PATH %}

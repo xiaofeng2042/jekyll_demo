@@ -13,7 +13,6 @@ CONFIG = {
   'theme_package_version' => "0.1.0"
 }
 
-
 # Path configuration helper
 module JB
   class Path
@@ -40,7 +39,6 @@ module JB
   
   end #Path
 end #JB
-
 
 # Usage: rake post title="A Title" [date="2012-02-09"] [tags=[tag1, tag2]]
 desc "Begin a new post in #{CONFIG['posts']}"
@@ -156,8 +154,7 @@ namespace :theme do
     puts "=> Theme successfully switched!"
     puts "=> Reload your web-page to check it out =)"
   end # task :switch
-
-
+  
   # Public: Install a theme using the theme packager.
   # Version 0.1.0 simple 1:1 file matching.
   #
@@ -221,7 +218,6 @@ namespace :theme do
     end
   end
 
-
   # Public: Package a theme using the theme packager.
   # The theme must be structured using valid JB API.
   # In other words packaging is essentially the reverse of installing.
@@ -263,7 +259,6 @@ namespace :theme do
   end
   
 end # end namespace :theme
-
 
 # Internal: Download and process a theme from a git url.
 # Notice we don't know the name of the theme until we look it up in the manifest.
@@ -317,16 +312,3 @@ end
 
 #Load custom rake scripts
 Dir['_rake/*.rake'].each { |r| load r }
-
-
-
-
-
-
-
-
-
-
-
-
-

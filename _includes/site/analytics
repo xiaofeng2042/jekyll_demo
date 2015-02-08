@@ -2,15 +2,15 @@
 
 {% case site.site.analytics.provider %}
 {% when "google" %}
-{% include site/analytics-providers/google %}
+  {% include site/analytics-providers/google %}
 {% when "baidu" %}
-{% include site/analytics-providers/baidu %}
+  {% include site/analytics-providers/baidu %}
 {% when "getclicky" %}
-{% include site/analytics-providers/getclicky %}
+  {% include site/analytics-providers/getclicky %}
 {% when "mixpanel" %}
-{% include site/analytics-providers/mixpanel %}
+  {% include site/analytics-providers/mixpanel %}
 {% when "custom" %}
-{% include custom/analytics %}
+  {% include custom/analytics %}
 {% endcase %}
 
 {% endif %}
